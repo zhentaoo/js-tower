@@ -1,0 +1,68 @@
+fancybox: true ## If you want to use fancybox please set the value to true.
+# duoshuo: zhentaoo ## Your duoshuo_shortname, e.g. username
+# disqus: zhentaoo ## Your disqus_shortname, e.g. username
+google_search:  ## Use Google search, true/false.
+baidu_search: true ## Use Baidu search, true/false.
+swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
+tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
+self_search: ## Use a jQuery-based local search engine, true/false.
+google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
+shareto: false ## If you want to use the share button please set the value to true.
+busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
+widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
+
+menu:
+  - page: home
+    directory: .
+    icon: fa-home
+  - page: archive
+    directory: archives/
+    icon: fa-archive
+  - page: 资源
+    directory: resource/
+    icon: fa-university
+  # - page: 教程
+  #   directory: video-lesson/
+  #   icon: fa-video-camera
+  - page: about
+    directory: about/
+    icon: fa-user
+  # - page: rss
+  #   directory: atom.xml
+  #   icon: fa-rss
+
+widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+  - search
+  # - post-list
+  - category
+  # - tag
+  # - recent_comments
+  - links
+  - talk
+  - pay
+  - ad
+  # - recent_posts
+
+links:
+  - title: 稀土掘金／青叶
+    url: https://juejin.im/user/599cef4af265da24874d076e
+  - title: Github／zhetaoo
+    url: https://github.com/zhentaoo
+timeline:
+  - num: 1
+    word: 2014/06/12-Start
+  - num: 2
+    word: 2014/11/29-XXX
+  - num: 3
+    word: 2015/02/18-DDD
+  - num: 4
+    word: More
+
+# Static files
+js: js
+css: css
+
+# Theme version
+version: 0.0.0

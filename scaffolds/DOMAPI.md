@@ -1,0 +1,4 @@
+---
+title: {{ title }}
+category: DOMAPI
+---

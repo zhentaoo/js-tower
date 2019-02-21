@@ -1,0 +1,73 @@
+include _partial/helpers
+
+if page.title
+  - var current_title = page.title
+else
+  - var current_title = config.title
+
+if config.feed
+  case config.feed.type
+    when 'rss2'
+      - var feed_type='application/rss+xml'
+    when 'atom'
+    default
+      - var feed_type='application/atom+xml'
+
+doctype html
+html(lang='#{config.language}')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    meta(content='yes', name='apple-mobile-web-app-capable')
+    meta(content='black-translucent', name='apple-mobile-web-app-status-bar-style')
+    meta(name="domain_verify" content="pmrgi33nmfuw4ir2ej5gqzloorqw63zomnxw2irmejtxk2leei5cemzumrqtomrtgfrgkojugq4tonrymjtgcnrrgm4damtemeztenbteiwce5djnvsvgylwmurdumjuhe2donbwg44tknzyhf6q")
+    meta(content='telephone=no', name='format-detection')
+    meta(name='description', content=config.description)
+    meta(name='TTUNION_verify', content='91cb506ecd55ba9a4614d3c646d79e2f')
+    block title
+    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/normalize/5.0.0/normalize.min.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/pure/0.6.2/pure-min.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css')
+    link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
+    link(rel='stylesheet', href='//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(type='text/javascript', src='/js/tongji-bd.js')
+    script(type='text/javascript', src='//cdn.bootcss.com/jquery/3.1.1/jquery.min.js')
+    link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
+    link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
+    link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
+    if config.feed
+      link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
+
+  body: .body_container
+    #header
+      .site-name
+        h1.hidden= current_title
+        a#logo(href=url_for('.'))= config.title
+        p.description= config.subtitle
+        img(src="/img/tower.png",style="width:80px;position:absolute;border-radius: 275px;top: 25px;left: -10px;border-top:1px solid gainsboro;")
+      #nav-menu
+        - for (var i in theme.menu)
+          +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
+
+    #layout.pure-g
+      .pure-u-1.pure-u-md-3-4: .content_container
+        block content
+      if theme.widgets_on_small_screens
+        .pure-u-1.pure-u-md-1-4: #sidebar
+          each item in theme.widgets
+            != partial('_widget/' + item + '.jade', null, {cache: !config.relative_link})
+      else
+        .pure-u-1-4.hidden_mid_and_down: #sidebar
+          each item in theme.widgets
+            != partial('_widget/' + item + '.jade', null, {cache: !config.relative_link})
+      .pure-u-1.pure-u-md-3-4
+        != partial('_partial/footer.jade')
+        
+    script(type='text/javascript')
+      var sogou_ad_id=832488;
+      var sogou_ad_height=90;
+      var sogou_ad_width=728;
+    script(type='text/javascript' src='http://images.sohu.com/cs/jsfile/js/c.js')
+
+    include _partial/totop
+    include _partial/after_footer
