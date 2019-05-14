@@ -1,7 +1,7 @@
 ## JavaScript暸望塔
 
-原博客 [zhentaoo.com](http://www.zhentaoo.com) 不再维护了，后续会把文章逐步迁移至Issue，目前还没有迁移完全，现在看原来写的文章还是很稚嫩，哈哈哈哈！
-
+原博客 [zhentaoo.com](http://www.zhentaoo.com) 不再维护了，后续会把文章逐步迁移至Issue，目前正在迁移中(原来写的文章还是很稚嫩，哈哈哈~
+）
 
 ### NodeJS
 - [高级爬虫: Puppeteer初探](https://github.com/zhentaoo/js-tower/issues/6)
