@@ -23,7 +23,7 @@
 ### JavaScript语言专题
 - [JS中的事件循环](https://github.com/zhentaoo/js-tower/issues/3)
 - [JS中的异步模型](#)
-- [Promise介绍](#)
+- [Promise介绍](#)
 - [作用域](#)
 - [原型链](#)
 - [This详解](#)
