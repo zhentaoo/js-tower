@@ -8,8 +8,8 @@
 - ~~[Puppeteer再探: UI自动化测试](#)~~
 - ~~[Puppeteer终探: 前端监控](#)~~
 - ~~[用Node写一个简易发布系统](#)~~
-- ~~[用NODE写一个脚手架工具](https://github.com/zhentaoo/js-tower/issues/1)~~
-- [Express入门](#)
+- [用NODE写一个脚手架工具](https://github.com/zhentaoo/js-tower/issues/1)
+- ~~[Express入门](#)~~
 
 ### Chrome: DOM、BOM
 - [CORS: 跨域相关问题](https://github.com/zhentaoo/js-tower/issues/5)
@@ -33,8 +33,8 @@
 - ~~[类型](#)~~
 
 ### 前端工程化
-- ~~[前端安全: XSS注入](#)~~
 - [前端性能](https://github.com/zhentaoo/js-tower/issues/2)
+- ~~[前端安全: XSS注入](#)~~
 - ~~[前端工具链: Webpack](#)~~
 - ~~[前端工具: NPM](#)~~
 - ~~[模块化: AMD、CMD、CommonJS](#)~~
