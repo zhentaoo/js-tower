@@ -10,7 +10,7 @@
   <p class="color">hello world!!!</p>
 </div>
 ```
-再说一个babel，babel本身是个编译器，结合jsx插件，经过语法分析+词法分析将上述html片段转化成AST抽象语法树，再通过编译器将AST转化为js对象（这里就不详细说AST了，有兴趣的可以使用babel打印下AST就能大致了解）
+再说一下babel，babel本身是个编译器结合jsx插件，经过语法分析+词法分析将上述html片段转化成AST抽象语法树，再将AST编译为js对象（这里就不详细说AST了，有兴趣的可以使用babel打印下AST就能大致了解）
 
 ```js
 {
