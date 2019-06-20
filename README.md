@@ -19,6 +19,7 @@
 - [异步模型](https://github.com/zhentaoo/js-tower/blob/master/blog/JS原理-异步模型.md)
 
 ### VueJS/ReactJS
+- [React: 虚拟DOM](https://github.com/zhentaoo/js-tower/blob/master/blog/React-VDom.md)
 - [VueJS: 组件通信](https://github.com/zhentaoo/js-tower/blob/master/blog/VueJS-组件通信.md)
 - [VueJS: 项目搭建](https://github.com/zhentaoo/js-tower/blob/master/blog/VueJS-项目搭建.md)
 
